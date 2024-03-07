@@ -1,0 +1,11 @@
+{
+  "hosting": [
+    {
+      "target": "ng-lives-stats",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "us-central1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "livesstats": {
+      "hosting": {
+        "ng-lives-stats": [
+          "livesstats"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "livesstats"
+  }
+}

@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": [],
@@ -95,10 +96,28 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss"
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "ng-lives-stats:build:production",
+              "serveTarget": "ng-lives-stats:serve:production"
+            },
+            "development": {
+              "buildTarget": "ng-lives-stats:build:development",
+              "serveTarget": "ng-lives-stats:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
